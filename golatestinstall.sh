@@ -1,9 +1,10 @@
 # 必要なツールをインストール
-apt-get update -y
-apt-get upgrade -y
-apt-get install -y wget git gcc
+apt update -y
+apt upgrade -y
+apt install -y git gcc
 
 # go1.4.3をダウンロード、解凍、削除
+# apt install -y wget
 # wget https://storage.googleapis.com/golang/go1.4.3.linux-amd64.tar.gz
 # mkdir $HOME/go1.4
 # tar xzf go1.4.3.linux-amd64.tar.gz -C $HOME/go1.4 --strip-components 1
