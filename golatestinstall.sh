@@ -10,7 +10,8 @@ apt install -y git gcc
 # tar xzf go1.4.3.linux-amd64.tar.gz -C $HOME/go1.4 --strip-components 1
 # rm go1.4.3.linux-amd64.tar.gz
 
-# go1.4.3をダウンロード、解凍、削除
+# go1.4.3をダウンロード、ビルド、インストール
+# デフォルト GOROOT_BOOTSTRAP="$HOME/go1.4"
 git clone -b go1.4.3 https://go.googlesource.com/go go1.4
 cd go1.4/src
 export CGO_ENABLED=0
@@ -19,7 +20,7 @@ export CGO_ENABLED=1
 cd ../..
 mv go1.4 $HOME
 
-# go最新版ダウンロード
+# go最新版ダウンロード、ビルド、インストール
 git clone https://go.googlesource.com/go
 cd go/src
 ./make.bash
