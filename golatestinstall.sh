@@ -1,7 +1,7 @@
 # 必要なツールをインストール
-apt update -y
-apt upgrade -y
-apt install -y git gcc
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install -y git gcc
 
 # go1.4.3をダウンロード、解凍、削除
 # apt install -y wget
@@ -18,14 +18,14 @@ export CGO_ENABLED=0
 ./make.bash
 export CGO_ENABLED=1
 cd ../..
-mv go1.4 $HOME
+sudo mv go1.4 $HOME
 
 # go最新版ダウンロード、ビルド、インストール
 git clone https://go.googlesource.com/go
 cd go/src
 ./make.bash
 cd ../..
-mv go /usr/local/
+sudo mv go /usr/local/
 
 # 環境変数を設定
 echo "
