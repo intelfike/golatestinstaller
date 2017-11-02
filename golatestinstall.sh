@@ -31,6 +31,6 @@ sudo mv go /usr/local/
 echo "
 export GOROOT=/usr/local/go
 export PATH=\$PATH:\$GOROOT/bin
-export GOPATH=\$HOME/Project/go
+export GOPATH=\$HOME/Projects/go
 export PATH=\$PATH:\$GOPATH/bin
 " >> ~/.bashrc
