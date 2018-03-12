@@ -1,5 +1,5 @@
 # 必要なツールをインストール
-sudo apt update -y
+sudo apt update
 sudo apt upgrade -y
 sudo apt install -y git gcc
 
@@ -36,6 +36,6 @@ export PATH=\$PATH:\$GOPATH/bin
 " >> ~/.bashrc
 
 # golangの便利な周辺ツール郡をインストール
-source ~/.bashrc
-go get golang.org/x/tools/cmd/...
+/usr/local/go/bin/go get golang.org/x/tools/cmd/...
+
 
