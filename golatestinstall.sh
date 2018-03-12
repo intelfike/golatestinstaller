@@ -34,3 +34,8 @@ export PATH=\$PATH:\$GOROOT/bin
 export GOPATH=\$HOME/Project/go
 export PATH=\$PATH:\$GOPATH/bin
 " >> ~/.bashrc
+
+# golangの便利な周辺ツール郡をインストール
+source ~/.bashrc
+go get golang.org/x/tools/cmd/...
+
