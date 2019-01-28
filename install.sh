@@ -30,10 +30,11 @@ sudo mv go /usr/local/
 # 環境変数を設定
 echo "
 export GOROOT=/usr/local/go
-export PATH=\$PATH:\$GOROOT/bin
 export GOPATH=\$HOME/Project/go
 export PATH=\$PATH:\$GOPATH/bin
 " >> ~/.bashrc
+
+ln -s $GOROOT/bin/go /usr/local/bin
 
 # golangの便利な周辺ツール郡をインストール
 /usr/local/go/bin/go get golang.org/x/tools/cmd/...
